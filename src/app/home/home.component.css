@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+body {
+    background-color: gray;
+    color: white;
+    margin: 0%;
+    font-family: 'roboto', monospace;
+    font-weight: 400;
+}
+h1{
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 20xp;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 15px;
+
+}
+
+h2 i {
+    color: yellowgreen;
+}
+
+h3 {
+    color: yellowgreen;
+}
+
+#Titulo_principal {
+    font-size: 40px;
+    font-family: 'Roboto', monospace;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+}
+
+.parrafo {
+    color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.header {
+    background-color: yellowgreen;
+    padding: 70px;
+    margin-bottom: 40px;
+
+}
+
+.header img {
+    display: block;
+    margin: auto;
+    ;
+    margin-bottom: 20px;
+    border-radius: 150px;
+}
+
+.card {
+    padding: 30px;
+    margin-right: 20px;
+    min-width: 400px;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.lista>li {
+    list-style: none;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill .skill_Description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill .progress {
+    height: 10px;
+    background-color: #FFF;
+}
+
+.skill .progress.percentage {
+    transition: width 2s ease;
+    width: 0;
+    background-color: yellowgreen;
+    animation-name: progress-bar;
+    animation-duration: 2s;
+}
+
+.idioma {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.idioma .stars {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.idioma .stars li {
+    list-style: none;
+}
+
+.idioma .stars li .fa-solid {
+    color: gold;
+}
+
+@keyframes progress-bar {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {
+        min-width: 500px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
