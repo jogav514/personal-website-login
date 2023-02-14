@@ -1,7 +1,9 @@
 <p *ngIf="loginError" class="error-message">user or password incorrect</p>
+<form class="form">
 <label for="username">Username</label>
 <input type="text" name="username" [(ngModel)]="username"/>
 <label for="password">Password</label>
 <input type="text" name="password" [(ngModel)] ="password"/>
 <button (click)="login()">Log in</button>
 <a routerLink="/home">Volver</a>
+</form>
